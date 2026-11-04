@@ -1,0 +1,36 @@
+/*
+ * lunar-zmk / paw keymap layout for one-row-mod.
+ *
+ * Put this in config/paw.keymap (or include it from there), after
+ * <one-row-mod/hrm.dtsi>.
+ *
+ * Position numbers are the zero-based indices of the 44-key `bindings`
+ * array in the default layer:
+ *
+ *   row 1:  0 TAB   1 Q   2 W   3 E   4 R   5 T   6 Y   7 U   8 I   9 O  10 P  11 DEL
+ *   row 2: 12 ESC  13 A  14 S  15 D  16 F  17 G  18 H  19 J  20 K  21 L  22 ;  23 ENT
+ *   row 3: 24 LSFT 25 Z  26 X  27 C  28 V  29 B  30 N  31 M  32 ,  33 .  34 /  35 WIN
+ *   thumb: 36 ENT  37 SPC 38 mtl 39 ENT 40 SPC 41 mtl 42 BSPC 43 none
+ */
+
+/ {
+    hrm_layout: hrm_layout {
+        compatible = "zmk,hrm-layout";
+
+        left-shift-position = <13>;   /* A */
+        left-alt-position = <14>;     /* S */
+        left-gui-position = <15>;     /* D */
+        left-ctrl-position = <16>;    /* F */
+
+        right-ctrl-position = <19>;   /* J */
+        right-gui-position = <20>;    /* K */
+        right-alt-position = <21>;    /* L */
+        right-shift-position = <22>;  /* ; */
+
+        /* Q W E R T G Z X C V B */
+        left-tap-positions = <1 2 3 4 5 17 25 26 27 28 29>;
+
+        /* Y U I O P H N M , . / */
+        right-tap-positions = <6 7 8 9 10 18 30 31 32 33 34>;
+    };
+};

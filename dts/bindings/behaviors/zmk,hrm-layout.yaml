@@ -1,0 +1,57 @@
+# Copyright (c) 2026 one-row-mod contributors
+# SPDX-License-Identifier: MIT
+
+description: |
+  Position map for the eight one-row-mod home-row-mod keys.
+
+  Positions are the flat, zero-based indices in the keymap's `bindings`
+  array, the same numbers used by ZMK combos.
+
+compatible: "zmk,hrm-layout"
+
+properties:
+  left-shift-position:
+    type: int
+    required: true
+    description: Position of the left-hand Shift HRM key.
+  left-alt-position:
+    type: int
+    required: true
+    description: Position of the left-hand Alt HRM key.
+  left-gui-position:
+    type: int
+    required: true
+    description: Position of the left-hand Gui HRM key.
+  left-ctrl-position:
+    type: int
+    required: true
+    description: Position of the left-hand Ctrl HRM key.
+  right-ctrl-position:
+    type: int
+    required: true
+    description: Position of the right-hand Ctrl HRM key.
+  right-gui-position:
+    type: int
+    required: true
+    description: Position of the right-hand Gui HRM key.
+  right-alt-position:
+    type: int
+    required: true
+    description: Position of the right-hand Alt HRM key.
+  right-shift-position:
+    type: int
+    required: true
+    description: Position of the right-hand Shift HRM key.
+
+  left-tap-positions:
+    type: array
+    required: true
+    description: |
+      Positions of the left-hand non-mod letters. Pressing one of these while
+      a left-hand HRM is undecided resolves that HRM as a tap.
+  right-tap-positions:
+    type: array
+    required: true
+    description: |
+      Positions of the right-hand non-mod letters. Pressing one of these while
+      a right-hand HRM is undecided resolves that HRM as a tap.

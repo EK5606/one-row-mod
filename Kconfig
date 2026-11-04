@@ -1,0 +1,11 @@
+# Copyright (c) 2026 one-row-mod contributors
+# SPDX-License-Identifier: MIT
+
+config ZMK_BEHAVIOR_HRM_HOLD_TAP
+    bool "Home-row-mod hold-tap behavior (one-row-mod)"
+    default y
+    help
+      Adds zmk,behavior-hrm-hold-tap: a hold-tap tailored to the
+      home-row-mod scheme used by this module (same-hand tap,
+      same-hand HRM mods locked until the hand's last hold releases,
+      and reverse mod sequences).

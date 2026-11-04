@@ -1,0 +1,25 @@
+/*
+ * zmk-config-pskeeb5 example layout (4 rows x 10 columns, 38 positions).
+ *
+ * The current pskeeb5 keymap does not use home-row mods; this is here only
+ * as a second example of filling hrm_layout.
+ */
+
+/ {
+    hrm_layout: hrm_layout {
+        compatible = "zmk,hrm-layout";
+
+        left-shift-position = <10>;   /* A */
+        left-alt-position = <11>;     /* S */
+        left-gui-position = <12>;     /* D */
+        left-ctrl-position = <13>;    /* F */
+
+        right-ctrl-position = <16>;   /* J */
+        right-gui-position = <17>;    /* K */
+        right-alt-position = <18>;    /* L */
+        right-shift-position = <19>;  /* ; */
+
+        left-tap-positions = <0 1 2 3 4 14 20 21 22 23 24>;
+        right-tap-positions = <5 6 7 8 9 15 25 26 27 28 29>;
+    };
+};

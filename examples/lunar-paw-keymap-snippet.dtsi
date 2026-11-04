@@ -1,0 +1,18 @@
+/*
+ * lunar-zmk / paw: replace the eight hml/hmr bindings in the default layer.
+ *
+ * Before:
+ *   &hml LEFT_SHIFT A  &hml LEFT_ALT S  &hml LEFT_GUI D  &hml LCTRL F
+ *   &hmr RCTRL J       &hmr RIGHT_GUI K &hmr RIGHT_ALT L &hmr RIGHT_SHIFT SEMICOLON
+ *
+ * After:
+ */
+&hrm_lsft LEFT_SHIFT A      /* A */
+&hrm_lalt LEFT_ALT S        /* S */
+&hrm_lgui LEFT_GUI D        /* D */
+&hrm_lctl LCTRL F           /* F */
+
+&hrm_rctl RCTRL J           /* J */
+&hrm_rgui RIGHT_GUI K       /* K */
+&hrm_ralt RIGHT_ALT L       /* L */
+&hrm_rsft RIGHT_SHIFT SEMICOLON  /* ; */

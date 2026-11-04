@@ -1,0 +1,99 @@
+/*
+ * one-row-mod: eight home-row-mod behaviors (4 left, 4 right).
+ *
+ * Include after <behaviors.dtsi>:
+ *
+ *   #include <behaviors.dtsi>
+ *   #include <one-row-mod/hrm.dtsi>
+ *
+ * The keymap must also define a node labeled hrm_layout with
+ * compatible = "zmk,hrm-layout"; see README.md and examples/.
+ *
+ * Bindings use the same order as &mt / &lt:
+ *   hold first, tap second.
+ *
+ *   &hrm_lsft LSHIFT A
+ *   &hrm_lalt LALT S
+ *   &hrm_lgui LGUI D
+ *   &hrm_lctl LCTRL F
+ *   &hrm_rctl RCTRL J
+ *   &hrm_rgui RGUI K
+ *   &hrm_ralt RALT L
+ *   &hrm_rsft RSHIFT SEMICOLON
+ */
+
+/ {
+    behaviors {
+        hrm_lsft: hrm_lsft {
+            compatible = "zmk,behavior-hrm-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <1000>;
+            quick-tap-ms = <200>;
+            bindings = <&kp>, <&kp>;
+        };
+
+        hrm_lalt: hrm_lalt {
+            compatible = "zmk,behavior-hrm-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <1000>;
+            quick-tap-ms = <200>;
+            bindings = <&kp>, <&kp>;
+        };
+
+        hrm_lgui: hrm_lgui {
+            compatible = "zmk,behavior-hrm-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <1000>;
+            quick-tap-ms = <200>;
+            bindings = <&kp>, <&kp>;
+        };
+
+        hrm_lctl: hrm_lctl {
+            compatible = "zmk,behavior-hrm-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <1000>;
+            quick-tap-ms = <200>;
+            bindings = <&kp>, <&kp>;
+        };
+
+        hrm_rctl: hrm_rctl {
+            compatible = "zmk,behavior-hrm-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <1000>;
+            quick-tap-ms = <200>;
+            bindings = <&kp>, <&kp>;
+        };
+
+        hrm_rgui: hrm_rgui {
+            compatible = "zmk,behavior-hrm-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <1000>;
+            quick-tap-ms = <200>;
+            bindings = <&kp>, <&kp>;
+        };
+
+        hrm_ralt: hrm_ralt {
+            compatible = "zmk,behavior-hrm-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <1000>;
+            quick-tap-ms = <200>;
+            bindings = <&kp>, <&kp>;
+        };
+
+        hrm_rsft: hrm_rsft {
+            compatible = "zmk,behavior-hrm-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <1000>;
+            quick-tap-ms = <200>;
+            bindings = <&kp>, <&kp>;
+        };
+    };
+};
